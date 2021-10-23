@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Touchstone Foundation',
+      title: 'MANASI 21RDFPP',
       home: ControlPanel(),
     );
   }
