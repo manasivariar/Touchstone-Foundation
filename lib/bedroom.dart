@@ -17,10 +17,16 @@ class BedRoom extends StatefulWidget {
 
 class _BedRoomState extends State<BedRoom> {
   List<SceneCardModel> scenes = [
-    SceneCardModel(color1: HexColor("FF9B9B"), color2: HexColor("FFB992"), title: "Birthday"),
-    SceneCardModel(color1: HexColor("AD93EB"), color2: HexColor("D693EB"), title: "Party"),
-    SceneCardModel(color1: HexColor("93CBEB"), color2: HexColor("93DCEB"), title: "Relax"),
-    SceneCardModel(color1: HexColor("8FDF94"), color2: HexColor("BAEA92"), title: "Fun"),
+    SceneCardModel(
+        color1: HexColor("FF9B9B"),
+        color2: HexColor("FFB992"),
+        title: "Birthday"),
+    SceneCardModel(
+        color1: HexColor("AD93EB"), color2: HexColor("D693EB"), title: "Party"),
+    SceneCardModel(
+        color1: HexColor("93CBEB"), color2: HexColor("93DCEB"), title: "Relax"),
+    SceneCardModel(
+        color1: HexColor("8FDF94"), color2: HexColor("BAEA92"), title: "Fun"),
   ];
 
   List<BedroomCardModel> lights = [
@@ -38,7 +44,7 @@ class _BedRoomState extends State<BedRoom> {
     "FF9B9B",
     "8FDF94",
     "93CBEB",
-    "AD93EB",
+    "A594EB",
     "DE94EB",
     "FFD239"
   ];

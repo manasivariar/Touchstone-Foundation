@@ -29,11 +29,15 @@ class PanelCard extends StatelessWidget {
               ),
               Text(
                 title,
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: Theme.of(context).textTheme.bodyText2!.copyWith(
+                                    fontSize: 20,
+                                    // fontWeight: FontWeight.w900,
+                                  ),
+                // style: const TextStyle(
+                //     fontWeight: FontWeight.normal, fontSize: 20),
               ),
               Text(
-                "$count Lights",
+                "$count Light${int.parse(count) < 2 ? '' : 's'}",
                 style: TextStyle(color: HexColor("FFA939")),
               ),
             ],
