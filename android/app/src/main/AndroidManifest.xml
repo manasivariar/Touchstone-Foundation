@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.manasi.ts_assignment">
    <application
-        android:label="ts_assignment"
+        android:label="MANASI 21RDFPP"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

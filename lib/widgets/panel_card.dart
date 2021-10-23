@@ -27,14 +27,16 @@ class PanelCard extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              Text(
-                title,
-                style: Theme.of(context).textTheme.bodyText2!.copyWith(
-                                    fontSize: 20,
-                                    // fontWeight: FontWeight.w900,
-                                  ),
-                // style: const TextStyle(
-                //     fontWeight: FontWeight.normal, fontSize: 20),
+              FittedBox(
+                child: Text(
+                  title,
+                  style: Theme.of(context).textTheme.bodyText2!.copyWith(
+                        fontSize: 20,
+                        // fontWeight: FontWeight.w900,
+                      ),
+                  // style: const TextStyle(
+                  //     fontWeight: FontWeight.normal, fontSize: 20),
+                ),
               ),
               Text(
                 "$count Light${int.parse(count) < 2 ? '' : 's'}",

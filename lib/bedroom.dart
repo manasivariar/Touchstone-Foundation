@@ -88,7 +88,7 @@ class _BedRoomState extends State<BedRoom> {
           // height: double.infinity,
           color: HexColor("#0A4DA2"),
           child: SingleChildScrollView(
-            physics: NeverScrollableScrollPhysics(),
+            // physics: NeverScrollableScrollPhysics(),
             child: Column(
               children: [
                 // const SizedBox(
@@ -386,7 +386,7 @@ class _BedRoomState extends State<BedRoom> {
                         child: GestureDetector(
                           onTap: () {
                             setState(() {
-                              _value = 0.0;
+                              _value = _value == 0.0 ? 10.0 : 0.0;
                             });
                           },
                           child: Container(
@@ -395,8 +395,8 @@ class _BedRoomState extends State<BedRoom> {
                                 boxShadow: [
                                   BoxShadow(
                                       offset: Offset.zero,
-                                      spreadRadius: 0.5,
-                                      blurRadius: 10,
+                                      spreadRadius: 0.1,
+                                      blurRadius: 15,
                                       color: Colors.black26)
                                 ]),
                             child: CircleAvatar(
