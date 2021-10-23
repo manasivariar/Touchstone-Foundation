@@ -270,10 +270,11 @@ class _BedRoomState extends State<BedRoom> {
                                     child: SfSliderTheme(
                                       data: SfSliderThemeData(
                                         tickOffset: const Offset(0.0, 10.0),
-                                        activeTrackHeight: 2,
-                                        inactiveTrackHeight: 2,
+                                        tickSize: Size(1.0, 5.0),
+                                        activeTrackHeight: 1,
+                                        inactiveTrackHeight: 1,
                                         trackCornerRadius: 5,
-                                        thumbRadius: 9,
+                                        thumbRadius: 7,
                                         thumbColor: Colors.white,
                                         activeTrackColor: HexColor("FFD239"),
                                         inactiveTrackColor: Colors.grey[300],
@@ -379,6 +380,7 @@ class _BedRoomState extends State<BedRoom> {
                       ),
                     ),
                     Positioned(
+                        top: 5,
                         right: 25,
                         // top: 10,
                         child: GestureDetector(
@@ -398,11 +400,11 @@ class _BedRoomState extends State<BedRoom> {
                                       color: Colors.black26)
                                 ]),
                             child: CircleAvatar(
-                                radius: 20,
+                                radius: 15,
                                 backgroundColor: Colors.white,
                                 child: SvgPicture.asset(
                                   "assets/Icon awesome-power-off.svg",
-                                  height: 23,
+                                  height: 17,
                                 )),
                           ),
                         ))
